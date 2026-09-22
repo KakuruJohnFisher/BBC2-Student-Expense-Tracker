@@ -1,5 +1,6 @@
 # BBC2-Student-Expense-Tracker
-BBC 2 OOP Java Programming Group Assignment
+BBC 2 OOP Java Programming Group Assignment.
+The project tracks the expenses of students.
 KAKURU JOHN FISHER 2500715077 25/U/15077/EVE,
 MWESIGE MELISSA ZAWADI 2500715327 25/U/15327/PS,
 AINEMBABAZI VIVIAN VIENNA 2500714871 25/U/14871/PS,
