@@ -1,0 +1,57 @@
+package studentexpensestracker;
+import java.util.Scanner;
+public class Studentexpensestracker {
+
+	public static void main(String[] args) {
+		
+		System.out.println("==========================");
+		System.out.println ("     STUDENT EXPENSES    ");
+		System.out.println("==========================");
+		
+		System.out.println("Enter student name:");
+		System.out.println("enter student course:");
+		
+	Scanner input = new Scanner(System.in);
+	
+			
+		double budget , expense , total = 0;
+		int number,choice;
+		
+		System.out.print("Enter your budget:");
+		budget = input .nextDouble();
+		
+		System.out.print("Enter number of expenses:");
+		number = input .nextInt();
+		
+		//FOR LOOP
+		for (int i = 1; 1<=number; i++) {
+			System.out.print("Enter expenses" + i + " :  ");
+			expense = input.nextDouble();
+			
+			//WHILE LOOP
+			while (expense<0) {
+				System.out.print("Enter a positive expense:");
+				expense= input.nextDouble();
+			}
+			
+			total = total + expense;
+		}
+		
+		//DO-WHILE LOOP
+		do {
+			
+			System.out.println("\nTotal expenses: " + total);
+			System.out.println("Balance: " + ( budget - total));
+			
+			//TERNARY
+			System.out.println(total <= budget ? "within budget" : "over budget" );
+			System.out.println("\n1.continue");
+			System.out.println("2. Exit");
+			System.out.println("choice: ");
+			choice = input.nextInt();
+		} while(choice == 1); 
+		System.out.println(" Thank you ! " );
+		
+		input.close();
+	}
+}
